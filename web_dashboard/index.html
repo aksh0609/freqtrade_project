@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freqtrade Unified Command</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <span class="icon">🚀</span>
+            <h1>Freqtrade <span class="highlight">Commander</span></h1>
+        </div>
+        <div class="header-stats">
+            <div class="total-stat">
+                <span class="label">Total Portfolio</span>
+                <span class="value" id="total-balance">$0.00</span>
+            </div>
+            <div class="server-status" id="global-status">
+                Initializing...
+            </div>
+        </div>
+    </header>
+
+    <main class="dashboard-grid">
+
+        <!-- Bot 6: Dip Catcher -->
+        <article class="bot-card" id="bot-8085">
+            <div class="card-header color-1">
+                <div class="bot-info">
+                    <a href="http://127.0.0.1:8085" target="_blank" class="bot-link">
+                        <h2>Dip Catcher <span class="external-icon">↗</span></h2>
+                    </a>
+                    <span class="port-badge">8085</span>
+                </div>
+                <div class="status-indicator offline">OFFLINE</div>
+            </div>
+
+            <div class="card-body">
+                <div class="stats-row">
+                    <div class="stat">
+                        <span class="label">Balance</span>
+                        <span class="value balance-val">---</span>
+                    </div>
+                    <div class="stat">
+                        <span class="label">Profit</span>
+                        <span class="value profit-val">---%</span>
+                    </div>
+                </div>
+
+                <div class="action-section">
+                    <h3>Manual Entry</h3>
+                    <div class="input-group">
+                        <input type="text" placeholder="BTC/USDT" class="pair-input">
+                        <button class="btn-buy" onclick="handleManualEntry(8085, 'buy')">BUY LONG</button>
+                        <button class="btn-sell-manual" onclick="handleManualEntry(8085, 'sell')">SELL SHORT</button>
+                    </div>
+                </div>
+
+                <div class="trades-section">
+                    <h3>Active Trades</h3>
+                    <ul class="trades-list">
+                        <!-- Trades will be injected here -->
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- Bot 1: Bollinger -->
+        <article class="bot-card" id="bot-8080">
+            <div class="card-header color-1">
+                <div class="bot-info">
+                    <a href="http://127.0.0.1:8080" target="_blank" class="bot-link">
+                        <h2>Bollinger Bands <span class="external-icon">↗</span></h2>
+                    </a>
+                    <span class="port-badge">8080</span>
+                </div>
+                <div class="status-indicator offline">OFFLINE</div>
+            </div>
+
+            <div class="card-body">
+                <div class="stats-row">
+                    <div class="stat">
+                        <span class="label">Balance</span>
+                        <span class="value balance-val">---</span>
+                    </div>
+                    <div class="stat">
+                        <span class="label">Profit</span>
+                        <span class="value profit-val">---%</span>
+                    </div>
+                </div>
+
+                <div class="action-section">
+                    <h3>Manual Entry</h3>
+                    <div class="input-group">
+                        <input type="text" placeholder="BTC/USDT" class="pair-input">
+                        <button class="btn-buy" onclick="handleManualEntry(8080, 'buy')">BUY LONG</button>
+                        <button class="btn-sell-manual" onclick="handleManualEntry(8080, 'sell')">SELL SHORT</button>
+                    </div>
+                </div>
+
+                <div class="trades-section">
+                    <h3>Active Trades</h3>
+                    <ul class="trades-list">
+                        <!-- Trades will be injected here -->
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- Bot 2: RSI-MACD -->
+        <article class="bot-card" id="bot-8081">
+            <div class="card-header color-2">
+                <div class="bot-info">
+                    <a href="http://127.0.0.1:8081" target="_blank" class="bot-link">
+                        <h2>RSI-MACD <span class="external-icon">↗</span></h2>
+                    </a>
+                    <span class="port-badge">8081</span>
+                </div>
+                <div class="status-indicator offline">OFFLINE</div>
+            </div>
+
+            <div class="card-body">
+                <div class="stats-row">
+                    <div class="stat">
+                        <span class="label">Balance</span>
+                        <span class="value balance-val">---</span>
+                    </div>
+                    <div class="stat">
+                        <span class="label">Profit</span>
+                        <span class="value profit-val">---%</span>
+                    </div>
+                </div>
+
+                <div class="action-section">
+                    <h3>Manual Entry</h3>
+                    <div class="input-group">
+                        <input type="text" placeholder="BTC/USDT" class="pair-input">
+                        <button class="btn-buy" onclick="handleManualEntry(8081, 'buy')">BUY LONG</button>
+                        <button class="btn-sell-manual" onclick="handleManualEntry(8081, 'sell')">SELL SHORT</button>
+                    </div>
+                </div>
+
+                <div class="trades-section">
+                    <h3>Active Trades</h3>
+                    <ul class="trades-list">
+                        <!-- Trades will be injected here -->
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- Bot 3: Manual Control -->
+        <article class="bot-card" id="bot-8082">
+            <div class="card-header color-3">
+                <div class="bot-info">
+                    <a href="http://127.0.0.1:8082" target="_blank" class="bot-link">
+                        <h2>Manual Scalper <span class="external-icon">↗</span></h2>
+                    </a>
+                    <span class="port-badge">8082</span>
+                </div>
+                <div class="status-indicator offline">OFFLINE</div>
+            </div>
+
+            <div class="card-body">
+                <div class="stats-row">
+                    <div class="stat">
+                        <span class="label">Balance</span>
+                        <span class="value balance-val">---</span>
+                    </div>
+                    <div class="stat">
+                        <span class="label">Profit</span>
+                        <span class="value profit-val">---%</span>
+                    </div>
+                </div>
+
+                <div class="action-section">
+                    <h3>Manual Entry</h3>
+                    <div class="input-group">
+                        <input type="text" placeholder="BTC/USDT" class="pair-input">
+                        <button class="btn-buy" onclick="handleManualEntry(8082, 'buy')">BUY LONG</button>
+                        <button class="btn-sell-manual" onclick="handleManualEntry(8082, 'sell')">SELL SHORT</button>
+                    </div>
+                </div>
+
+                <div class="trades-section">
+                    <h3>Active Trades</h3>
+                    <ul class="trades-list">
+                        <!-- Trades will be injected here -->
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- Bot 4: NostalgiaForInfinity -->
+        <article class="bot-card" id="bot-8083">
+            <div class="card-header color-4">
+                <div class="bot-info">
+                    <a href="http://127.0.0.1:8083" target="_blank" class="bot-link">
+                        <h2>NFI X7 <span class="external-icon">↗</span></h2>
+                    </a>
+                    <span class="port-badge">8083</span>
+                </div>
+                <div class="status-indicator offline">OFFLINE</div>
+            </div>
+
+            <div class="card-body">
+                <div class="stats-row">
+                    <div class="stat">
+                        <span class="label">Balance</span>
+                        <span class="value balance-val">---</span>
+                    </div>
+                    <div class="stat">
+                        <span class="label">Profit</span>
+                        <span class="value profit-val">---%</span>
+                    </div>
+                </div>
+
+                <div class="action-section">
+                    <h3>Manual Entry</h3>
+                    <div class="input-group">
+                        <input type="text" placeholder="BTC/USDT" class="pair-input">
+                        <button class="btn-buy" onclick="handleManualEntry(8083, 'buy')">BUY LONG</button>
+                        <button class="btn-sell-manual" onclick="handleManualEntry(8083, 'sell')">SELL SHORT</button>
+                    </div>
+                </div>
+
+                <div class="trades-section">
+                    <h3>Active Trades</h3>
+                    <ul class="trades-list">
+                        <!-- Trades will be injected here -->
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- Bot 5: E0V1E_v17 -->
+        <article class="bot-card" id="bot-8084">
+            <div class="card-header color-5">
+                <div class="bot-info">
+                    <a href="http://127.0.0.1:8084" target="_blank" class="bot-link">
+                        <h2>E0V1E <span class="external-icon">↗</span></h2>
+                    </a>
+                    <span class="port-badge">8084</span>
+                </div>
+                <div class="status-indicator offline">OFFLINE</div>
+            </div>
+
+            <div class="card-body">
+                <div class="stats-row">
+                    <div class="stat">
+                        <span class="label">Balance</span>
+                        <span class="value balance-val">---</span>
+                    </div>
+                    <div class="stat">
+                        <span class="label">Profit</span>
+                        <span class="value profit-val">---%</span>
+                    </div>
+                </div>
+
+                <div class="action-section">
+                    <h3>Manual Entry</h3>
+                    <div class="input-group">
+                        <input type="text" placeholder="BTC/USDT" class="pair-input">
+                        <button class="btn-buy" onclick="handleManualEntry(8084, 'buy')">BUY LONG</button>
+                        <button class="btn-sell-manual" onclick="handleManualEntry(8084, 'sell')">SELL SHORT</button>
+                    </div>
+                </div>
+
+                <div class="trades-section">
+                    <h3>Active Trades</h3>
+                    <ul class="trades-list">
+                        <!-- Trades will be injected here -->
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- Bot 7: Michael Harris Pattern -->
+        <article class="bot-card" id="bot-8086">
+            <div class="card-header color-6">
+                <div class="bot-info">
+                    <a href="http://127.0.0.1:8086" target="_blank" class="bot-link">
+                        <h2>MH Pattern <span class="external-icon">↗</span></h2>
+                    </a>
+                    <span class="port-badge">8086</span>
+                </div>
+                <div class="status-indicator offline">OFFLINE</div>
+            </div>
+
+            <div class="card-body">
+                <div class="stats-row">
+                    <div class="stat">
+                        <span class="label">Balance</span>
+                        <span class="value balance-val">---</span>
+                    </div>
+                    <div class="stat">
+                        <span class="label">Profit</span>
+                        <span class="value profit-val">---%</span>
+                    </div>
+                </div>
+
+                <div class="action-section">
+                    <h3>Manual Entry</h3>
+                    <div class="input-group">
+                        <input type="text" placeholder="BTC/USDT" class="pair-input">
+                        <button class="btn-buy" onclick="handleManualEntry(8086, 'buy')">BUY LONG</button>
+                        <button class="btn-sell-manual" onclick="handleManualEntry(8086, 'sell')">SELL SHORT</button>
+                    </div>
+                </div>
+
+                <div class="trades-section">
+                    <h3>Active Trades</h3>
+                    <ul class="trades-list">
+                        <!-- Trades will be injected here -->
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+
+    </main>
+
+    <div id="toast-container"></div>
+
+    <script src="app.js?v=7"></script>
+</body>
+
+</html>
