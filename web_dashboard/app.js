@@ -6,7 +6,8 @@ const CONFIG = {
         { id: 8083, name: "Bot 4", url: "http://127.0.0.1:8083/api/v1" },
         { id: 8084, name: "Bot 5", url: "http://127.0.0.1:8084/api/v1" },
         { id: 8085, name: "Bot 6 (Dip)", url: "http://127.0.0.1:8085/api/v1" },
-        { id: 8086, name: "Bot 7 (MH)", url: "http://127.0.0.1:8086/api/v1" }
+        { id: 8086, name: "Bot 7 (MH)", url: "http://127.0.0.1:8086/api/v1" },
+        { id: 8087, name: "Bot 8 (Fear)", url: "http://127.0.0.1:8087/api/v1" }
     ],
     auth: {
         username: "freqtrader",
@@ -112,6 +113,56 @@ async function handleSell(botId, tradeId) {
         refreshBot(botId);
     } else {
         showToast(`Sell failed: ${res ? res.message || JSON.stringify(res) : 'Error'}`, "error");
+    }
+}
+
+async function stopAllBots() {
+    if (!confirm("⚠️ DANGER: Are you sure you want to STOP ALL TRADING BOTS immediately?")) return;
+
+    showToast("🛑 Stopping all bots...", "info");
+
+    try {
+        const response = await fetch('/api/stop_all_bots', {
+            method: 'POST'
+        });
+
+        const data = await response.json();
+
+        if (data.status === "success") {
+            showToast("✅ All bots stopped successfully!", "success");
+            // Refresh to update UI to offline status
+            setTimeout(refreshAll, 2000);
+        } else {
+            showToast(`❌ Failed: ${data.message}`, "error");
+        }
+    } catch (e) {
+        console.error("Stop error", e);
+        showToast("❌ Network error while stopping bots", "error");
+    }
+}
+
+async function startAllBots() {
+    if (!confirm("🚀 Ready to launch? Are you sure you want to START ALL TRADING BOTS?")) return;
+
+    showToast("🚀 Starting all bots...", "info");
+
+    try {
+        const response = await fetch('/api/start_all_bots', {
+            method: 'POST'
+        });
+
+        const data = await response.json();
+
+        if (data.status === "success") {
+            showToast("✅ All bots started successfully!", "success");
+            // Wait a bit for bots to spin up, then refresh
+            setTimeout(refreshAll, 5000);
+        } else {
+            showToast(`❌ Failed: ${data.message}`, "error");
+        }
+    } catch (e) {
+        console.error("Start error", e);
+        showToast("❌ Network error while starting bots", "error");
     }
 }
 

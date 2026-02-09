@@ -49,6 +49,7 @@ while true; do
     if ps aux | grep -v grep | grep "config_e0v1e_8084" > /dev/null; then echo "  Bot 5 (E0V1E):     [Running] - http://127.0.0.1:8084"; else echo "  Bot 5 (E0V1E):     [\033[91mStopped\033[0m] - http://127.0.0.1:8084"; fi
     if ps aux | grep -v grep | grep "config_dip_catcher_8085" > /dev/null; then echo "  Bot 6 (Dip Catch): [Running] - http://127.0.0.1:8085"; else echo "  Bot 6 (Dip Catch): [\033[91mStopped\033[0m] - http://127.0.0.1:8085"; fi
     if ps aux | grep -v grep | grep "config_mh_8086" > /dev/null; then echo "  Bot 7 (MH Patt):   [Running] - http://127.0.0.1:8086"; else echo "  Bot 7 (MH Patt):   [\033[91mStopped\033[0m] - http://127.0.0.1:8086"; fi
+    if ps aux | grep -v grep | grep "config_fear_8087" > /dev/null; then echo "  Bot 8 (Fear Trd):  [Running] - http://127.0.0.1:8087"; else echo "  Bot 8 (Fear Trd):  [\033[91mStopped\033[0m] - http://127.0.0.1:8087"; fi
 
     echo ""
     echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"

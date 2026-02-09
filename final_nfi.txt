@@ -1,0 +1,304 @@
+2026-02-05 15:33:47,306 - freqtrade - INFO - freqtrade 2025.12-dev-748d1bbc8
+2026-02-05 15:33:48,664 - freqtrade.configuration.load_config - INFO - Using config: user_data/config_nfi_8083.json ...
+2026-02-05 15:33:48,667 - freqtrade.loggers - INFO - Enabling colorized output.
+2026-02-05 15:33:48,667 - freqtrade.loggers - INFO - Logfile configured
+2026-02-05 15:33:48,667 - freqtrade.loggers - INFO - Verbosity set to 0
+2026-02-05 15:33:48,667 - freqtrade.configuration.configuration - WARNING - `force_entry_enable` RPC message enabled.
+2026-02-05 15:33:48,668 - freqtrade.configuration.configuration - INFO - Parameter -i/--timeframe detected ... Using timeframe: 5m ...
+2026-02-05 15:33:48,668 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2026-02-05 15:33:48,668 - freqtrade.configuration.configuration - INFO - Parameter --timerange detected: 20250101-20260101 ...
+2026-02-05 15:33:48,668 - freqtrade.configuration.configuration - INFO - Using user-data directory: /Users/akshaykumar/freqtrade/user_data ...
+2026-02-05 15:33:48,668 - freqtrade.configuration.configuration - INFO - Using data directory: /Users/akshaykumar/freqtrade/user_data/data/bybit ...
+2026-02-05 15:33:48,668 - freqtrade.configuration.configuration - INFO - Parameter --cache=none detected ...
+2026-02-05 15:33:48,668 - freqtrade.configuration.configuration - INFO - Filter trades by timerange: 20250101-20260101
+2026-02-05 15:33:48,669 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2026-02-05 15:33:48,674 - freqtrade.exchange.check_exchange - INFO - Exchange "bybit" is officially supported by the Freqtrade development team.
+2026-02-05 15:33:48,674 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2026-02-05 15:33:48,674 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2026-02-05 15:33:48,675 - freqtrade.commands.optimize_commands - INFO - Starting freqtrade in Backtesting mode
+2026-02-05 15:33:48,676 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2026-02-05 15:33:48,676 - freqtrade.exchange.exchange - INFO - Using CCXT 4.5.26
+2026-02-05 15:33:48,676 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap', 'defaultSettle': 'USDT'}, 'sandbox': True}
+2026-02-05 15:33:48,680 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap', 'defaultSettle': 'USDT'}, 'sandbox': True}
+2026-02-05 15:33:48,685 - freqtrade.exchange.exchange - INFO - Using Exchange "Bybit"
+2026-02-05 15:33:50,172 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Bybit'...
+2026-02-05 15:33:50,241 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy NostalgiaForInfinityX7 from '/Users/akshaykumar/freqtrade/user_data/strategies/NostalgiaForInfinityX7.py'...
+2026-02-05 15:33:50,241 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2026-02-05 15:33:50,242 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value from the configuration: 5m.
+2026-02-05 15:33:50,242 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value from the configuration: USDT.
+2026-02-05 15:33:50,242 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value from the configuration: 20.
+2026-02-05 15:33:50,242 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value from the configuration: {'entry': 60, 'exit': 60, 'exit_timeout_count': 0, 
+'unit': 'minutes'}.
+2026-02-05 15:33:50,242 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'position_adjustment_enable' with value from the configuration: True.
+2026-02-05 15:33:50,242 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_entry_position_adjustment' with value from the configuration: 3.
+2026-02-05 15:33:50,243 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value from the configuration: 5.
+2026-02-05 15:33:50,243 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {}
+2026-02-05 15:33:50,243 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2026-02-05 15:33:50,243 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.99
+2026-02-05 15:33:50,243 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2026-02-05 15:33:50,243 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive: 0.01
+2026-02-05 15:33:50,243 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.03
+2026-02-05 15:33:50,243 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: True
+2026-02-05 15:33:50,243 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2026-02-05 15:33:50,244 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2026-02-05 15:33:50,244 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 
+'stoploss_on_exchange_interval': 60}
+2026-02-05 15:33:50,244 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2026-02-05 15:33:50,244 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2026-02-05 15:33:50,244 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 20
+2026-02-05 15:33:50,244 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 199
+2026-02-05 15:33:50,244 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 60, 'exit': 60, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2026-02-05 15:33:50,244 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2026-02-05 15:33:50,244 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2026-02-05 15:33:50,245 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: True
+2026-02-05 15:33:50,245 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2026-02-05 15:33:50,245 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2026-02-05 15:33:50,245 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2026-02-05 15:33:50,245 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: True
+2026-02-05 15:33:50,245 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: 3
+2026-02-05 15:33:50,245 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2026-02-05 15:33:50,245 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2026-02-05 15:33:50,250 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/Users/akshaykumar/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2026-02-05 15:33:50,254 - freqtrade.plugins.pairlist.IPairList - WARNING - Pair MATIC/USDT:USDT is not compatible with exchange Bybit. Removing it from whitelist..
+2026-02-05 15:33:50,255 - freqtrade.optimize.backtesting - INFO - Using fee 0.0600% - worst case fee from exchange (lowest tier).
+2026-02-05 15:33:50,310 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BTC/USDT:USDT, futures, 5m, data starts at 2025-01-01 00:00:00
+2026-02-05 15:33:50,350 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ETH/USDT:USDT, futures, 5m, data starts at 2025-01-01 00:00:00
+2026-02-05 15:33:50,383 - freqtrade.data.history.datahandlers.idatahandler - WARNING - SOL/USDT:USDT, futures, 5m, data starts at 2025-01-01 00:00:00
+2026-02-05 15:33:50,418 - freqtrade.data.history.datahandlers.idatahandler - WARNING - XRP/USDT:USDT, futures, 5m, data starts at 2025-01-01 00:00:00
+2026-02-05 15:33:50,453 - freqtrade.data.history.datahandlers.idatahandler - WARNING - LINK/USDT:USDT, futures, 5m, data starts at 2025-01-01 00:00:00
+2026-02-05 15:33:50,478 - freqtrade.optimize.backtesting - INFO - Loading data from 2025-01-01 00:00:00 up to 2026-01-01 00:00:00 (365 days).
+2026-02-05 15:33:50,478 - freqtrade.configuration.timerange - WARNING - Moving start-date by 199 candles to account for startup time.
+2026-02-05 15:33:52,824 - freqtrade.optimize.backtesting - INFO - Dataload complete. Calculating indicators
+2026-02-05 15:33:52,835 - freqtrade.optimize.backtesting - INFO - Running backtesting for Strategy NostalgiaForInfinityX7
+2026-02-05 15:33:52,839 - freqtrade.data.dataprovider - INFO - Loading data for BTC/USDT:USDT 5m from 2024-12-31 07:25:00 to 2026-01-01 00:00:00
+2026-02-05 15:33:52,854 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BTC/USDT:USDT, futures, 5m, data starts at 2025-01-01 00:00:00
+2026-02-05 15:33:52,907 - freqtrade.data.dataprovider - INFO - Loading data for BTC/USDT:USDT 15m from 2024-12-29 22:15:00 to 2026-01-01 00:00:00
+2026-02-05 15:33:52,916 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BTC/USDT:USDT, futures, 15m, data starts at 2025-01-01 00:00:00
+2026-02-05 15:33:52,937 - freqtrade.data.dataprovider - INFO - Loading data for BTC/USDT:USDT 1h from 2024-12-23 17:00:00 to 2026-01-01 00:00:00
+2026-02-05 15:33:52,944 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BTC/USDT:USDT, futures, 1h, data starts at 2025-01-01 00:00:00
+2026-02-05 15:33:52,956 - freqtrade.data.dataprovider - INFO - Loading data for BTC/USDT:USDT 4h from 2024-11-28 20:00:00 to 2026-01-01 00:00:00
+2026-02-05 15:33:52,961 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BTC/USDT:USDT, futures, 4h, data starts at 2025-01-01 00:00:00
+2026-02-05 15:33:52,971 - freqtrade.data.dataprovider - INFO - Loading data for BTC/USDT:USDT 1d from 2024-06-16 00:00:00 to 2026-01-01 00:00:00
+2026-02-05 15:33:52,974 - freqtrade.data.history.datahandlers.idatahandler - WARNING - BTC/USDT:USDT, futures, 1d, data starts at 2025-01-01 00:00:00
+2026-02-05 15:33:54,339 - freqtrade.data.dataprovider - INFO - Loading data for ETH/USDT:USDT 15m from 2024-12-29 22:15:00 to 2026-01-01 00:00:00
+2026-02-05 15:33:54,350 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ETH/USDT:USDT, futures, 15m, data starts at 2025-01-01 00:00:00
+2026-02-05 15:33:54,397 - freqtrade.data.dataprovider - INFO - Loading data for ETH/USDT:USDT 1h from 2024-12-23 17:00:00 to 2026-01-01 00:00:00
+2026-02-05 15:33:54,403 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ETH/USDT:USDT, futures, 1h, data starts at 2025-01-01 00:00:00
+2026-02-05 15:33:54,461 - freqtrade.data.dataprovider - INFO - Loading data for ETH/USDT:USDT 4h from 2024-11-28 20:00:00 to 2026-01-01 00:00:00
+2026-02-05 15:33:54,464 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ETH/USDT:USDT, futures, 4h, data starts at 2025-01-01 00:00:00
+2026-02-05 15:33:54,580 - freqtrade.data.dataprovider - INFO - Loading data for ETH/USDT:USDT 1d from 2024-06-16 00:00:00 to 2026-01-01 00:00:00
+2026-02-05 15:33:54,588 - freqtrade.data.history.datahandlers.idatahandler - WARNING - ETH/USDT:USDT, futures, 1d, data starts at 2025-01-01 00:00:00
+2026-02-05 15:33:55,483 - freqtrade.data.dataprovider - INFO - Loading data for SOL/USDT:USDT 15m from 2024-12-29 22:15:00 to 2026-01-01 00:00:00
+2026-02-05 15:33:55,505 - freqtrade.data.history.datahandlers.idatahandler - WARNING - SOL/USDT:USDT, futures, 15m, data starts at 2025-01-01 00:00:00
+2026-02-05 15:33:55,555 - freqtrade.data.dataprovider - INFO - Loading data for SOL/USDT:USDT 1h from 2024-12-23 17:00:00 to 2026-01-01 00:00:00
+2026-02-05 15:33:55,560 - freqtrade.data.history.datahandlers.idatahandler - WARNING - SOL/USDT:USDT, futures, 1h, data starts at 2025-01-01 00:00:00
+2026-02-05 15:33:55,616 - freqtrade.data.dataprovider - INFO - Loading data for SOL/USDT:USDT 4h from 2024-11-28 20:00:00 to 2026-01-01 00:00:00
+2026-02-05 15:33:55,619 - freqtrade.data.history.datahandlers.idatahandler - WARNING - SOL/USDT:USDT, futures, 4h, data starts at 2025-01-01 00:00:00
+2026-02-05 15:33:55,722 - freqtrade.data.dataprovider - INFO - Loading data for SOL/USDT:USDT 1d from 2024-06-16 00:00:00 to 2026-01-01 00:00:00
+2026-02-05 15:33:55,725 - freqtrade.data.history.datahandlers.idatahandler - WARNING - SOL/USDT:USDT, futures, 1d, data starts at 2025-01-01 00:00:00
+2026-02-05 15:33:56,745 - freqtrade.data.dataprovider - INFO - Loading data for XRP/USDT:USDT 15m from 2024-12-29 22:15:00 to 2026-01-01 00:00:00
+2026-02-05 15:33:56,759 - freqtrade.data.history.datahandlers.idatahandler - WARNING - XRP/USDT:USDT, futures, 15m, data starts at 2025-01-01 00:00:00
+2026-02-05 15:33:56,817 - freqtrade.data.dataprovider - INFO - Loading data for XRP/USDT:USDT 1h from 2024-12-23 17:00:00 to 2026-01-01 00:00:00
+2026-02-05 15:33:56,823 - freqtrade.data.history.datahandlers.idatahandler - WARNING - XRP/USDT:USDT, futures, 1h, data starts at 2025-01-01 00:00:00
+2026-02-05 15:33:56,875 - freqtrade.data.dataprovider - INFO - Loading data for XRP/USDT:USDT 4h from 2024-11-28 20:00:00 to 2026-01-01 00:00:00
+2026-02-05 15:33:56,879 - freqtrade.data.history.datahandlers.idatahandler - WARNING - XRP/USDT:USDT, futures, 4h, data starts at 2025-01-01 00:00:00
+2026-02-05 15:33:56,999 - freqtrade.data.dataprovider - INFO - Loading data for XRP/USDT:USDT 1d from 2024-06-16 00:00:00 to 2026-01-01 00:00:00
+2026-02-05 15:33:57,001 - freqtrade.data.history.datahandlers.idatahandler - WARNING - XRP/USDT:USDT, futures, 1d, data starts at 2025-01-01 00:00:00
+2026-02-05 15:33:57,778 - freqtrade.data.dataprovider - INFO - Loading data for LINK/USDT:USDT 15m from 2024-12-29 22:15:00 to 2026-01-01 00:00:00
+2026-02-05 15:33:57,801 - freqtrade.data.history.datahandlers.idatahandler - WARNING - LINK/USDT:USDT, futures, 15m, data starts at 2025-01-01 00:00:00
+2026-02-05 15:33:57,855 - freqtrade.data.dataprovider - INFO - Loading data for LINK/USDT:USDT 1h from 2024-12-23 17:00:00 to 2026-01-01 00:00:00
+2026-02-05 15:33:57,860 - freqtrade.data.history.datahandlers.idatahandler - WARNING - LINK/USDT:USDT, futures, 1h, data starts at 2025-01-01 00:00:00
+2026-02-05 15:33:57,911 - freqtrade.data.dataprovider - INFO - Loading data for LINK/USDT:USDT 4h from 2024-11-28 20:00:00 to 2026-01-01 00:00:00
+2026-02-05 15:33:57,916 - freqtrade.data.history.datahandlers.idatahandler - WARNING - LINK/USDT:USDT, futures, 4h, data starts at 2025-01-01 00:00:00
+2026-02-05 15:33:58,032 - freqtrade.data.dataprovider - INFO - Loading data for LINK/USDT:USDT 1d from 2024-06-16 00:00:00 to 2026-01-01 00:00:00
+2026-02-05 15:33:58,035 - freqtrade.data.history.datahandlers.idatahandler - WARNING - LINK/USDT:USDT, futures, 1d, data starts at 2025-01-01 00:00:00
+2026-02-05 15:33:59,187 - freqtrade.optimize.backtesting - INFO - Backtesting with data from 2025-01-01 16:35:00 up to 2026-01-01 00:00:00 (364 days).
+/Users/akshaykumar/freqtrade/freqtrade/optimize/backtesting.py:506: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace([nan], [0 if not tag_col else None])
+/Users/akshaykumar/freqtrade/freqtrade/optimize/backtesting.py:506: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace([nan], [0 if not tag_col else None])
+/Users/akshaykumar/freqtrade/freqtrade/optimize/backtesting.py:506: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace([nan], [0 if not tag_col else None])
+/Users/akshaykumar/freqtrade/freqtrade/optimize/backtesting.py:506: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace([nan], [0 if not tag_col else None])
+/Users/akshaykumar/freqtrade/freqtrade/optimize/backtesting.py:506: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace([nan], [0 if not tag_col else None])
+2026-02-05 15:34:09,707 - freqtrade.misc - INFO - dumping json to "/Users/akshaykumar/freqtrade/user_data/backtest_results/backtest-result-2026-02-05_15-34-09.meta.json"
+Result for strategy NostalgiaForInfinityX7
+                                                BACKTESTING REPORT                                                 
+┏━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃           Pair ┃ Trades ┃ Avg Profit % ┃ Tot Profit USDT ┃ Tot Profit % ┃ Avg Duration ┃  Win  Draw  Loss  Win% ┃
+┡━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━┩
+│  XRP/USDT:USDT │     13 │          7.1 │           8.296 │         2.49 │      0:49:00 │   13     0     0   100 │
+│  SOL/USDT:USDT │     10 │        11.47 │           7.709 │         2.31 │      1:22:00 │   10     0     0   100 │
+│ LINK/USDT:USDT │      7 │         5.59 │           3.800 │         1.14 │      1:37:00 │    7     0     0   100 │
+│  ETH/USDT:USDT │      4 │          3.1 │           0.945 │         0.28 │      5:05:00 │    4     0     0   100 │
+│  BTC/USDT:USDT │      1 │         1.54 │           0.535 │         0.16 │     23:05:00 │    1     0     0   100 │
+│          TOTAL │     35 │         7.43 │          21.284 │         6.39 │      2:16:00 │   35     0     0   100 │
+└────────────────┴────────┴──────────────┴─────────────────┴──────────────┴──────────────┴────────────────────────┘
+                                         LEFT OPEN TRADES REPORT                                          
+┏━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃  Pair ┃ Trades ┃ Avg Profit % ┃ Tot Profit USDT ┃ Tot Profit % ┃ Avg Duration ┃  Win  Draw  Loss  Win% ┃
+┡━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ TOTAL │      0 │          0.0 │           0.000 │          0.0 │         0:00 │    0     0     0     0 │
+└───────┴────────┴──────────────┴─────────────────┴──────────────┴──────────────┴────────────────────────┘
+                                                     ENTER TAG STATS                                                     
+┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃           Enter Tag ┃ Entries ┃ Avg Profit % ┃ Tot Profit USDT ┃ Tot Profit % ┃ Avg Duration ┃  Win  Draw  Loss  Win% ┃
+┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━┩
+│                 142 │       8 │         9.78 │           6.523 │         1.96 │      0:39:00 │    8     0     0   100 │
+│                 141 │       9 │         3.98 │           3.264 │         0.98 │      3:11:00 │    9     0     0   100 │
+│                 145 │       5 │         5.84 │           3.071 │         0.92 │      7:26:00 │    5     0     0   100 │
+│                 143 │       1 │        40.04 │           2.066 │         0.62 │      0:05:00 │    1     0     0   100 │
+│                 144 │       4 │         5.27 │           1.878 │         0.56 │      0:12:00 │    4     0     0   100 │
+│                  63 │       1 │        18.24 │           0.908 │         0.27 │      0:10:00 │    1     0     0   100 │
+│          1 4 43 141 │       1 │         7.13 │           0.709 │         0.21 │      0:25:00 │    1     0     0   100 │
+│  2 4 5 6 63 141 143 │       1 │         6.43 │           0.640 │         0.19 │      1:25:00 │    1     0     0   100 │
+│           42 62 144 │       1 │         5.68 │           0.564 │         0.17 │      1:10:00 │    1     0     0   100 │
+│              42 144 │       1 │         5.47 │           0.546 │         0.16 │      2:55:00 │    1     0     0   100 │
+│             141 142 │       1 │         4.93 │           0.492 │         0.15 │      0:20:00 │    1     0     0   100 │
+│               6 141 │       1 │         4.49 │           0.449 │         0.13 │      0:15:00 │    1     0     0   100 │
+│                  62 │       1 │         3.33 │           0.175 │         0.05 │      0:25:00 │    1     0     0   100 │
+│               TOTAL │      35 │         7.43 │          21.284 │         6.39 │      2:16:00 │   35     0     0   100 │
+└─────────────────────┴─────────┴──────────────┴─────────────────┴──────────────┴──────────────┴────────────────────────┘
+                                                                EXIT REASON STATS                                                                 
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                                    Exit Reason ┃ Exits ┃ Avg Profit % ┃ Tot Profit USDT ┃ Tot Profit % ┃ Avg Duration ┃  Win  Draw  Loss  Win% ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━┩
+│                      exit_long_tc_u_11 ( 143 ) │     1 │        40.04 │           2.066 │         0.62 │      0:05:00 │    1     0     0   100 │
+│                     exit_long_tc_w_5_6 ( 142 ) │     1 │        16.79 │           1.672 │          0.5 │      0:25:00 │    1     0     0   100 │
+│                       exit_long_tc_u_1 ( 141 ) │     3 │          4.0 │           1.180 │         0.35 │      0:05:00 │    3     0     0   100 │
+│                   exit_long_tc_d_3_123 ( 145 ) │     1 │        11.73 │           1.169 │         0.35 │      1:15:00 │    1     0     0   100 │
+│                   exit_long_tc_d_4_118 ( 142 ) │     1 │        13.55 │           1.075 │         0.32 │      1:10:00 │    1     0     0   100 │
+│                    exit_long_tc_w_4_11 ( 142 ) │     1 │        14.61 │           0.912 │         0.27 │      1:30:00 │    1     0     0   100 │
+│                  exit_long_rebuy_d_5_65 ( 63 ) │     1 │        18.24 │           0.908 │         0.27 │      0:10:00 │    1     0     0   100 │
+│         exit_long_normal_d_2_65 ( 1 4 43 141 ) │     1 │         7.13 │           0.709 │         0.21 │      0:25:00 │    1     0     0   100 │
+│                    exit_long_tc_d_1_20 ( 141 ) │     2 │         3.61 │           0.707 │         0.21 │      0:28:00 │    2     0     0   100 │
+│                   exit_long_tc_d_3_120 ( 142 ) │     1 │        11.16 │           0.701 │         0.21 │      0:10:00 │    1     0     0   100 │
+│                   exit_long_tc_d_2_120 ( 142 ) │     1 │         6.99 │           0.682 │          0.2 │      0:25:00 │    1     0     0   100 │
+│                   exit_long_tc_d_2_120 ( 144 ) │     1 │         7.87 │           0.657 │          0.2 │      0:15:00 │    1     0     0   100 │
+│ exit_long_normal_d_2_78 ( 2 4 5 6 63 141 143 ) │     1 │         6.43 │           0.640 │         0.19 │      1:25:00 │    1     0     0   100 │
+│                    exit_long_tc_d_2_70 ( 142 ) │     1 │         6.32 │           0.604 │         0.18 │      0:20:00 │    1     0     0   100 │
+│                   exit_long_tc_d_2_120 ( 145 ) │     1 │         7.25 │           0.596 │         0.18 │      0:20:00 │    1     0     0   100 │
+│           exit_long_quick_d_1_13 ( 42 62 144 ) │     1 │         5.68 │           0.564 │         0.17 │      1:10:00 │    1     0     0   100 │
+│                   exit_long_tc_d_1_120 ( 142 ) │     1 │         5.64 │           0.562 │         0.17 │      0:30:00 │    1     0     0   100 │
+│                   exit_long_tc_d_2_120 ( 141 ) │     1 │         7.11 │           0.560 │         0.17 │      0:10:00 │    1     0     0   100 │
+│              exit_long_quick_d_1_78 ( 42 144 ) │     1 │         5.47 │           0.546 │         0.16 │      2:55:00 │    1     0     0   100 │
+│                   exit_long_tc_d_0_119 ( 145 ) │     1 │         1.54 │           0.535 │         0.16 │     23:05:00 │    1     0     0   100 │
+│                exit_long_tc_d_1_71 ( 141 142 ) │     1 │         4.93 │           0.492 │         0.15 │      0:20:00 │    1     0     0   100 │
+│                   exit_long_tc_d_1_120 ( 144 ) │     1 │         4.81 │           0.452 │         0.14 │      0:20:00 │    1     0     0   100 │
+│              exit_long_normal_d_1_71 ( 6 141 ) │     1 │         4.49 │           0.449 │         0.13 │      0:15:00 │    1     0     0   100 │
+│                   exit_long_tc_d_1_111 ( 144 ) │     1 │         4.92 │           0.438 │         0.13 │      0:05:00 │    1     0     0   100 │
+│                    exit_long_tc_w_1_11 ( 145 ) │     1 │          4.1 │           0.410 │         0.12 │      3:00:00 │    1     0     0   100 │
+│                    exit_long_tc_d_1_14 ( 141 ) │     1 │         3.91 │           0.378 │         0.11 │      7:35:00 │    1     0     0   100 │
+│                    exit_long_tc_d_1_55 ( 145 ) │     1 │         4.58 │           0.361 │         0.11 │      9:30:00 │    1     0     0   100 │
+│                       exit_long_tc_u_1 ( 144 ) │     1 │         3.47 │           0.331 │          0.1 │      0:10:00 │    1     0     0   100 │
+│                    exit_long_tc_d_1_97 ( 142 ) │     1 │         3.17 │           0.315 │         0.09 │      0:45:00 │    1     0     0   100 │
+│                    exit_long_tc_d_1_84 ( 141 ) │     1 │         3.27 │           0.240 │         0.07 │     13:55:00 │    1     0     0   100 │
+│                   exit_long_tc_d_0_119 ( 141 ) │     1 │         2.33 │           0.199 │         0.06 │      5:50:00 │    1     0     0   100 │
+│                  exit_long_rebuy_d_1_65 ( 62 ) │     1 │         3.33 │           0.175 │         0.05 │      0:25:00 │    1     0     0   100 │
+│                                          TOTAL │    35 │         7.43 │          21.284 │         6.39 │      2:16:00 │   35     0     0   100 │
+└────────────────────────────────────────────────┴───────┴──────────────┴─────────────────┴──────────────┴──────────────┴────────────────────────┘
+                                                                             MIXED TAG STATS                                                                             
+┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃           Enter Tag ┃                                    Exit Reason ┃ Trades ┃ Avg Profit % ┃ Tot Profit USDT ┃ Tot Profit % ┃ Avg Duration ┃  Win  Draw  Loss  Win% ┃
+┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━┩
+│                 143 │                      exit_long_tc_u_11 ( 143 ) │      1 │        40.04 │           2.066 │         0.62 │      0:05:00 │    1     0     0   100 │
+│                 142 │                     exit_long_tc_w_5_6 ( 142 ) │      1 │        16.79 │           1.672 │          0.5 │      0:25:00 │    1     0     0   100 │
+│                 141 │                       exit_long_tc_u_1 ( 141 ) │      3 │          4.0 │           1.180 │         0.35 │      0:05:00 │    3     0     0   100 │
+│                 145 │                   exit_long_tc_d_3_123 ( 145 ) │      1 │        11.73 │           1.169 │         0.35 │      1:15:00 │    1     0     0   100 │
+│                 142 │                   exit_long_tc_d_4_118 ( 142 ) │      1 │        13.55 │           1.075 │         0.32 │      1:10:00 │    1     0     0   100 │
+│                 142 │                    exit_long_tc_w_4_11 ( 142 ) │      1 │        14.61 │           0.912 │         0.27 │      1:30:00 │    1     0     0   100 │
+│                  63 │                  exit_long_rebuy_d_5_65 ( 63 ) │      1 │        18.24 │           0.908 │         0.27 │      0:10:00 │    1     0     0   100 │
+│          1 4 43 141 │         exit_long_normal_d_2_65 ( 1 4 43 141 ) │      1 │         7.13 │           0.709 │         0.21 │      0:25:00 │    1     0     0   100 │
+│                 141 │                    exit_long_tc_d_1_20 ( 141 ) │      2 │         3.61 │           0.707 │         0.21 │      0:28:00 │    2     0     0   100 │
+│                 142 │                   exit_long_tc_d_3_120 ( 142 ) │      1 │        11.16 │           0.701 │         0.21 │      0:10:00 │    1     0     0   100 │
+│                 142 │                   exit_long_tc_d_2_120 ( 142 ) │      1 │         6.99 │           0.682 │          0.2 │      0:25:00 │    1     0     0   100 │
+│                 144 │                   exit_long_tc_d_2_120 ( 144 ) │      1 │         7.87 │           0.657 │          0.2 │      0:15:00 │    1     0     0   100 │
+│  2 4 5 6 63 141 143 │ exit_long_normal_d_2_78 ( 2 4 5 6 63 141 143 ) │      1 │         6.43 │           0.640 │         0.19 │      1:25:00 │    1     0     0   100 │
+│                 142 │                    exit_long_tc_d_2_70 ( 142 ) │      1 │         6.32 │           0.604 │         0.18 │      0:20:00 │    1     0     0   100 │
+│                 145 │                   exit_long_tc_d_2_120 ( 145 ) │      1 │         7.25 │           0.596 │         0.18 │      0:20:00 │    1     0     0   100 │
+│           42 62 144 │           exit_long_quick_d_1_13 ( 42 62 144 ) │      1 │         5.68 │           0.564 │         0.17 │      1:10:00 │    1     0     0   100 │
+│                 142 │                   exit_long_tc_d_1_120 ( 142 ) │      1 │         5.64 │           0.562 │         0.17 │      0:30:00 │    1     0     0   100 │
+│                 141 │                   exit_long_tc_d_2_120 ( 141 ) │      1 │         7.11 │           0.560 │         0.17 │      0:10:00 │    1     0     0   100 │
+│              42 144 │              exit_long_quick_d_1_78 ( 42 144 ) │      1 │         5.47 │           0.546 │         0.16 │      2:55:00 │    1     0     0   100 │
+│                 145 │                   exit_long_tc_d_0_119 ( 145 ) │      1 │         1.54 │           0.535 │         0.16 │     23:05:00 │    1     0     0   100 │
+│             141 142 │                exit_long_tc_d_1_71 ( 141 142 ) │      1 │         4.93 │           0.492 │         0.15 │      0:20:00 │    1     0     0   100 │
+│                 144 │                   exit_long_tc_d_1_120 ( 144 ) │      1 │         4.81 │           0.452 │         0.14 │      0:20:00 │    1     0     0   100 │
+│               6 141 │              exit_long_normal_d_1_71 ( 6 141 ) │      1 │         4.49 │           0.449 │         0.13 │      0:15:00 │    1     0     0   100 │
+│                 144 │                   exit_long_tc_d_1_111 ( 144 ) │      1 │         4.92 │           0.438 │         0.13 │      0:05:00 │    1     0     0   100 │
+│                 145 │                    exit_long_tc_w_1_11 ( 145 ) │      1 │          4.1 │           0.410 │         0.12 │      3:00:00 │    1     0     0   100 │
+│                 141 │                    exit_long_tc_d_1_14 ( 141 ) │      1 │         3.91 │           0.378 │         0.11 │      7:35:00 │    1     0     0   100 │
+│                 145 │                    exit_long_tc_d_1_55 ( 145 ) │      1 │         4.58 │           0.361 │         0.11 │      9:30:00 │    1     0     0   100 │
+│                 144 │                       exit_long_tc_u_1 ( 144 ) │      1 │         3.47 │           0.331 │          0.1 │      0:10:00 │    1     0     0   100 │
+│                 142 │                    exit_long_tc_d_1_97 ( 142 ) │      1 │         3.17 │           0.315 │         0.09 │      0:45:00 │    1     0     0   100 │
+│                 141 │                    exit_long_tc_d_1_84 ( 141 ) │      1 │         3.27 │           0.240 │         0.07 │     13:55:00 │    1     0     0   100 │
+│                 141 │                   exit_long_tc_d_0_119 ( 141 ) │      1 │         2.33 │           0.199 │         0.06 │      5:50:00 │    1     0     0   100 │
+│                  62 │                  exit_long_rebuy_d_1_65 ( 62 ) │      1 │         3.33 │           0.175 │         0.05 │      0:25:00 │    1     0     0   100 │
+│               TOTAL │                                                │     35 │         7.43 │          21.284 │         6.39 │      2:16:00 │   35     0     0   100 │
+└─────────────────────┴────────────────────────────────────────────────┴────────┴──────────────┴─────────────────┴──────────────┴──────────────┴────────────────────────┘
+                         SUMMARY METRICS                          
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Metric                        ┃ Value                          ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ Backtesting from              │ 2025-01-01 16:35:00            │
+│ Backtesting to                │ 2026-01-01 00:00:00            │
+│ Trading Mode                  │ Isolated Futures               │
+│ Max open trades               │ 5                              │
+│                               │                                │
+│ Total/Daily Avg Trades        │ 35 / 0.1                       │
+│ Starting balance              │ 333 USDT                       │
+│ Final balance                 │ 354.284 USDT                   │
+│ Absolute profit               │ 21.284 USDT                    │
+│ Total profit %                │ 6.39%                          │
+│ CAGR %                        │ 6.41%                          │
+│ Sortino                       │ -100.00                        │
+│ Sharpe                        │ 2.90                           │
+│ Calmar                        │ -100.00                        │
+│ SQN                           │ 9.20                           │
+│ Profit factor                 │ 0.00                           │
+│ Expectancy (Ratio)            │ 0.61 (100.00)                  │
+│ Avg. daily profit             │ 0.058 USDT                     │
+│ Avg. stake amount             │ 9.55 USDT                      │
+│ Total trade volume            │ 2029.221 USDT                  │
+│                               │                                │
+│ Best Pair                     │ XRP/USDT:USDT 2.49%            │
+│ Worst Pair                    │ BTC/USDT:USDT 0.16%            │
+│ Best trade                    │ SOL/USDT:USDT 40.04%           │
+│ Worst trade                   │ BTC/USDT:USDT 1.54%            │
+│ Best day                      │ 4.696 USDT                     │
+│ Worst day                     │ 0 USDT                         │
+│ Days win/draw/lose            │ 16 / 249 / 0                   │
+│ Min/Max/Avg. Duration Winners │ 0d 00:05 / 0d 23:05 / 0d 02:16 │
+│ Min/Max/Avg. Duration Losers  │ 0d 00:00 / 0d 00:00 / 0d 00:00 │
+│ Max Consecutive Wins / Loss   │ 35 / 0                         │
+│ Rejected Entry signals        │ 0                              │
+│ Entry/Exit Timeouts           │ 0 / 0                          │
+│                               │                                │
+│ Min balance                   │ 333.438 USDT                   │
+│ Max balance                   │ 354.284 USDT                   │
+│ Max % of account underwater   │ 0.00%                          │
+│ Absolute drawdown             │ 0 USDT (0.00%)                 │
+│ Drawdown duration             │ 0 days 00:00:00                │
+│ Profit at drawdown start      │ 0 USDT                         │
+│ Profit at drawdown end        │ 0 USDT                         │
+│ Drawdown start                │ 2025-01-19 15:10:00            │
+│ Drawdown end                  │ 2025-01-19 15:10:00            │
+│ Market change                 │ -22.37%                        │
+└───────────────────────────────┴────────────────────────────────┘
+
+Backtested 2025-01-01 16:35:00 -> 2026-01-01 00:00:00 | Max open trades : 5
+                                                             STRATEGY SUMMARY                                                              
+┏━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃               Strategy ┃ Trades ┃ Avg Profit % ┃ Tot Profit USDT ┃ Tot Profit % ┃ Avg Duration ┃  Win  Draw  Loss  Win% ┃      Drawdown ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ NostalgiaForInfinityX7 │     35 │         7.43 │          21.284 │         6.39 │      2:16:00 │   35     0     0   100 │ 0 USDT  0.00% │
+└────────────────────────┴────────┴──────────────┴─────────────────┴──────────────┴──────────────┴────────────────────────┴───────────────┘
+2026-02-05 15:34:11,319 - ccxt.base.exchange - WARNING - bybit requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async 
+coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+2026-02-05 15:34:11,322 - asyncio - ERROR - Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x11d2bad50>, 229473.970424), (<aiohttp.client_proto.ResponseHandler object at 0x11d3adff0>, 229473.989076291), 
+(<aiohttp.client_proto.ResponseHandler object at 0x11d4234d0>, 229474.01607775), (<aiohttp.client_proto.ResponseHandler object at 0x11d490190>, 229474.035527458), 
+(<aiohttp.client_proto.ResponseHandler object at 0x11d3aea00>, 229474.09797775), (<aiohttp.client_proto.ResponseHandler object at 0x11d3e7b10>, 229474.182318541), 
+(<aiohttp.client_proto.ResponseHandler object at 0x11d474730>, 229474.23898275), (<aiohttp.client_proto.ResponseHandler object at 0x11d474cb0>, 229474.458451875)])']
+connector: <aiohttp.connector.TCPConnector object at 0x11d4212b0>

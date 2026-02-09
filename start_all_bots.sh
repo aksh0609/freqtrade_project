@@ -48,6 +48,12 @@ echo "📊 Starting Bot 7: Michael Harris Strategy (Port 8086)..."
 BOT7_PID=$!
 sleep 2
 
+# Start Bot 8: Fear Trader on Port 8087
+echo "📊 Starting Bot 8: Fear Trader Strategy (Port 8087)..."
+./.venv/bin/freqtrade trade -c user_data/config_fear_8087.json --strategy BollingerBounceFearTrader > /tmp/bot_8087.log 2>&1 &
+BOT8_PID=$!
+sleep 2
+
 echo ""
 echo "✅ All Bots Started!"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
@@ -60,6 +66,7 @@ echo "  Bot 4 (NFI X7)         - PID: $BOT4_PID - http://127.0.0.1:8083"
 echo "  Bot 5 (E0V1E_v17)      - PID: $BOT5_PID - http://127.0.0.1:8084"
 echo "  Bot 6 (Dip Catcher)    - PID: $BOT6_PID - http://127.0.0.1:8085"
 echo "  Bot 7 (MH Pattern)     - PID: $BOT7_PID - http://127.0.0.1:8086"
+echo "  Bot 8 (Fear Trader)    - PID: $BOT8_PID - http://127.0.0.1:8087"
 echo ""
 echo "🌐 Access Web UIs:"
 echo "  Bollinger:      http://127.0.0.1:8080"
@@ -69,6 +76,7 @@ echo "  NFI X7:         http://127.0.0.1:8083"
 echo "  E0V1E_v17:      http://127.0.0.1:8084"
 echo "  Dip Catcher:    http://127.0.0.1:8085"
 echo "  MH Pattern:     http://127.0.0.1:8086"
+echo "  Fear Trader:    http://127.0.0.1:8087"
 echo ""
 echo "👤 Login: freqtrader / freqtrade123"
 echo ""
@@ -80,6 +88,7 @@ echo "  tail -f /tmp/bot_8083.log  # NFI X7"
 echo "  tail -f /tmp/bot_8084.log  # E0V1E_v17"
 echo "  tail -f /tmp/bot_8085.log  # Dip Catcher"
 echo "  tail -f /tmp/bot_8086.log  # MH Pattern"
+echo "  tail -f /tmp/bot_8087.log  # Fear Trader"
 echo ""
 echo "🛑 To stop all bots: ./stop_all_bots.sh"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"

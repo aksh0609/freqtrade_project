@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freqtrade Unified Command</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
@@ -16,13 +16,23 @@
             <span class="icon">🚀</span>
             <h1>Freqtrade <span class="highlight">Commander</span></h1>
         </div>
-        <div class="header-stats">
-            <div class="total-stat">
-                <span class="label">Total Portfolio</span>
-                <span class="value" id="total-balance">$0.00</span>
-            </div>
-            <div class="server-status" id="global-status">
-                Initializing...
+        <div class="header-controls" style="display: flex; gap: 20px; align-items: center;">
+            <button onclick="startAllBots()" class="btn-start-all"
+                style="background-color: #2ed573; color: white; border: none; padding: 10px 20px; border-radius: 8px; font-weight: bold; cursor: pointer; transition: all 0.2s;">
+                🚀 START ALL BOTS
+            </button>
+            <button onclick="stopAllBots()" class="btn-stop-all"
+                style="background-color: #ff4757; color: white; border: none; padding: 10px 20px; border-radius: 8px; font-weight: bold; cursor: pointer; transition: all 0.2s;">
+                🛑 STOP ALL BOTS
+            </button>
+            <div class="header-stats">
+                <div class="total-stat">
+                    <span class="label">Total Portfolio</span>
+                    <span class="value" id="total-balance">$0.00</span>
+                </div>
+                <div class="server-status" id="global-status">
+                    Initializing...
+                </div>
             </div>
         </div>
     </header>
@@ -323,12 +333,54 @@
             </div>
         </article>
 
+        <!-- Bot 8: Fear Trader -->
+        <article class="bot-card" id="bot-8087">
+            <div class="card-header color-7">
+                <div class="bot-info">
+                    <a href="http://127.0.0.1:8087" target="_blank" class="bot-link">
+                        <h2>Fear Trader <span class="external-icon">↗</span></h2>
+                    </a>
+                    <span class="port-badge">8087</span>
+                </div>
+                <div class="status-indicator offline">OFFLINE</div>
+            </div>
+
+            <div class="card-body">
+                <div class="stats-row">
+                    <div class="stat">
+                        <span class="label">Balance</span>
+                        <span class="value balance-val">---</span>
+                    </div>
+                    <div class="stat">
+                        <span class="label">Profit</span>
+                        <span class="value profit-val">---%</span>
+                    </div>
+                </div>
+
+                <div class="action-section">
+                    <h3>Manual Entry</h3>
+                    <div class="input-group">
+                        <input type="text" placeholder="BTC/USDT" class="pair-input">
+                        <button class="btn-buy" onclick="handleManualEntry(8087, 'buy')">BUY LONG</button>
+                        <button class="btn-sell-manual" onclick="handleManualEntry(8087, 'sell')">SELL SHORT</button>
+                    </div>
+                </div>
+
+                <div class="trades-section">
+                    <h3>Active Trades</h3>
+                    <ul class="trades-list">
+                        <!-- Trades will be injected here -->
+                    </ul>
+                </div>
+            </div>
+        </article>
+
 
     </main>
 
     <div id="toast-container"></div>
 
-    <script src="app.js?v=7"></script>
+    <script src="/static/app.js?v=7"></script>
 </body>
 
 </html>

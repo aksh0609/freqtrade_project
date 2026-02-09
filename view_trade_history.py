@@ -18,6 +18,9 @@ BOTS = [
     {"name": "Manual Control", "port": 8082, "emoji": "🎯"},
     {"name": "NFI X7", "port": 8083, "emoji": "♾️"},
     {"name": "E0V1E_v17", "port": 8084, "emoji": "🤖"},
+    {"name": "Dip Catcher", "port": 8085, "emoji": "📉"},
+    {"name": "MH Pattern", "port": 8086, "emoji": "🧠"},
+    {"name": "Fear Trader", "port": 8087, "emoji": "😨"},
 ]
 USERNAME = os.environ.get("FREQTRADE_USER", "freqtrader")
 PASSWORD = os.environ.get("FREQTRADE_PASS", "freqtrade123")

@@ -11,12 +11,11 @@ echo "🚀 STARTING FREQTRADE COMMANDER"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo ""
 
+# Check if dashboard dir exists
 if [ ! -d "$DASHBOARD_DIR" ]; then
     echo "❌ Error: Dashboard directory not found at $DASHBOARD_DIR"
     exit 1
 fi
-
-cd "$DASHBOARD_DIR"
 
 # Check if port 8000 is already in use
 if lsof -Pi :$PORT -sTCP:LISTEN -t >/dev/null ; then
@@ -32,5 +31,5 @@ echo ""
 echo "Press Ctrl+C to stop the server"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
-# Use python3 to serve the directory, explicitly binding to 127.0.0.1
-python3 -m http.server $PORT --bind 127.0.0.1
+# Use virtualenv uvicorn to serve the new backend app from root
+./.venv/bin/uvicorn commander_server:app --host 127.0.0.1 --port $PORT

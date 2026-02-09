@@ -22,6 +22,7 @@ BOTS = [
     {"name": "E0V1E_v17", "port": 8084, "color": "\033[96m"},  # Cyan
     {"name": "Dip Catcher", "port": 8085, "color": "\033[91m"},  # Red
     {"name": "MH Pattern", "port": 8086, "color": "\033[97m"},  # White
+    {"name": "Fear Trader", "port": 8087, "color": "\033[94m"},  # Blue
 ]
 PAIRS_FUT = ["BTC/USDT:USDT", "ETH/USDT:USDT"]
 PAIRS_SPOT = ["BTCUSDT", "ETHUSDT"]
