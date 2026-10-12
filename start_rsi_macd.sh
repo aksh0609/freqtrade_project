@@ -6,7 +6,7 @@ pkill -f "freqtrade trade"
 sleep 2
 
 echo "🚀 Starting RSI-MACD Strategy..."
-cd /Users/akshaykumar/freqtrade
+cd "$(dirname "$0")"
 freqtrade trade -c user_data/config_bybit_spot.json --strategy RSI_MACD_Strategy &
 
 echo "✅ RSI-MACD Strategy is now running!"

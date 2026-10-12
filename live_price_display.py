@@ -1,4 +1,4 @@
-#!/Users/akshaykumar/freqtrade/.venv/bin/python3
+#!/usr/bin/env python3
 """
 Performance Optimized Live Price Display for Freqtrade Bots
 Shows real-time current prices for all trading pairs across all bots

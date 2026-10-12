@@ -3,7 +3,8 @@
 # Start Freqtrade Scalper Bot (Manual Control)
 # Port: 8082
 
-PYTHON_ENV="/Users/akshaykumar/freqtrade/.venv/bin/python3"
+cd "$(dirname "$0")"
+PYTHON_ENV="$PWD/.venv/bin/python3"
 CONFIG="user_data/config_scalper_8082.json"
 STRATEGY="ManualControlStrategy"
 LOG_FILE="/tmp/bot_8082.log"

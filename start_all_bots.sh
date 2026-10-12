@@ -4,7 +4,7 @@
 echo "🚀 Starting All Freqtrade Bots..."
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
-cd /Users/akshaykumar/freqtrade
+cd "$(dirname "$0")"
 
 # Start Bot 1: Bollinger Bands on Port 8080
 echo "📊 Starting Bot 1: Bollinger Bands Strategy (Port 8080)..."

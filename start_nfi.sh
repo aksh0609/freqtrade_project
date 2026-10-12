@@ -3,7 +3,8 @@
 # Start Freqtrade NFI X7 Bot
 # Port: 8083
 
-PYTHON_ENV="/Users/akshaykumar/freqtrade/.venv/bin/python3"
+cd "$(dirname "$0")"
+PYTHON_ENV="$PWD/.venv/bin/python3"
 CONFIG="user_data/config_nfi_8083.json"
 STRATEGY="NostalgiaForInfinityX7"
 LOG_FILE="/tmp/bot_8083.log"

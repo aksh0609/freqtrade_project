@@ -1,4 +1,4 @@
-#!/Users/akshaykumar/freqtrade/.venv/bin/python3
+#!/usr/bin/env python3
 """
 Trade History Viewer for Freqtrade Bots
 Shows detailed buy/sell history with profit/loss for all bots

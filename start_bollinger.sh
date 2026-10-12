@@ -6,7 +6,7 @@ pkill -f "freqtrade trade"
 sleep 2
 
 echo "🚀 Starting Bollinger Bands Strategy..."
-cd /Users/akshaykumar/freqtrade
+cd "$(dirname "$0")"
 freqtrade trade -c user_data/config_bybit_spot.json --strategy BollingerBands_Strategy &
 
 echo "✅ Bollinger Bands Strategy is now running!"

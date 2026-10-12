@@ -4,7 +4,7 @@
 # This script serves the web dashboard on port 8000
 
 PORT=8000
-DASHBOARD_DIR="/Users/akshaykumar/freqtrade/web_dashboard"
+DASHBOARD_DIR="$(cd "$(dirname "$0")" && pwd)/web_dashboard"
 
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo "🚀 STARTING FREQTRADE COMMANDER"
