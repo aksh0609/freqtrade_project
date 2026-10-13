@@ -14,24 +14,24 @@ You can now run **multiple Freqtrade bots simultaneously**, each with:
 ## 📊 Bot Configuration
 
 ### Bot 1: Bollinger Bands Strategy
-- **Port:** 8080
-- **Web UI:** http://127.0.0.1:8080
+- **Port:** 7101
+- **Web UI:** http://127.0.0.1:7101
 - **Strategy:** BollingerBands_Strategy
 - **Config:** [config_bollinger_8080.json](user_data/config_bollinger_8080.json)
 - **Database:** tradesv3.bollinger.dryrun.sqlite
 - **Wallet:** 333 USDT (33% of 1000)
 
 ### Bot 2: RSI-MACD Strategy
-- **Port:** 8081
-- **Web UI:** http://127.0.0.1:8081
+- **Port:** 7102
+- **Web UI:** http://127.0.0.1:7102
 - **Strategy:** RSI_MACD_Strategy
 - **Config:** [config_rsi_macd_8081.json](user_data/config_rsi_macd_8081.json)
 - **Database:** tradesv3.rsi_macd.dryrun.sqlite
 - **Wallet:** 333 USDT (33% of 1000)
 
 ### Bot 3: Scalper Strategy (Reserved)
-- **Port:** 8082
-- **Web UI:** http://127.0.0.1:8082
+- **Port:** 7103
+- **Web UI:** http://127.0.0.1:7103
 - **Strategy:** Scalper_Strategy (to be created)
 - **Config:** [config_scalper_8082.json](user_data/config_scalper_8082.json)
 - **Database:** tradesv3.scalper.dryrun.sqlite
@@ -88,9 +88,9 @@ Once bots are running, access each Web UI:
 
 | Bot | URL | Login |
 |-----|-----|-------|
-| **Bollinger Bands** | http://127.0.0.1:8080 | freqtrader / freqtrade123 |
-| **RSI-MACD** | http://127.0.0.1:8081 | freqtrader / freqtrade123 |
-| **Scalper** | http://127.0.0.1:8082 | freqtrader / freqtrade123 |
+| **Bollinger Bands** | http://127.0.0.1:7101 | freqtrader / freqtrade123 |
+| **RSI-MACD** | http://127.0.0.1:7102 | freqtrader / freqtrade123 |
+| **Scalper** | http://127.0.0.1:7103 | freqtrader / freqtrade123 |
 
 **Pro Tip:** Open each URL in a different browser tab to monitor all bots simultaneously!
 
@@ -116,9 +116,9 @@ tail -f /tmp/bot_8080.log /tmp/bot_8081.log
 ### Check API Status
 ```bash
 # Quick ping test
-curl http://127.0.0.1:8080/api/v1/ping  # Bollinger
-curl http://127.0.0.1:8081/api/v1/ping  # RSI-MACD
-curl http://127.0.0.1:8082/api/v1/ping  # Scalper
+curl http://127.0.0.1:7101/api/v1/ping  # Bollinger
+curl http://127.0.0.1:7102/api/v1/ping  # RSI-MACD
+curl http://127.0.0.1:7103/api/v1/ping  # Scalper
 ```
 
 ### View All Trades
@@ -163,11 +163,11 @@ All bots share the same Bybit API keys (safe for dry-run).
 
 ### Port Already in Use
 ```bash
-# Check what's using port 8080
-lsof -i :8080
+# Check what's using port 7101
+lsof -i :7101
 
 # Kill process on port
-kill -9 $(lsof -t -i:8080)
+kill -9 $(lsof -t -i:7101)
 ```
 
 ### Bot Won't Start
@@ -252,7 +252,7 @@ To add Bot 4, 5, etc.:
 
 1. **Create new config file:**
    - Copy existing config
-   - Change `listen_port` to 8083, 8084, etc.
+   - Change `listen_port` to 7104, 7105, etc.
    - Change `bot_name`
    - Change `db_url`
 
@@ -270,7 +270,7 @@ To add Bot 4, 5, etc.:
 
 **You now have:**
 ✅ 3 separate bot configurations
-✅ 3 different Web UIs (ports 8080, 8081, 8082)
+✅ 3 different Web UIs (ports 7101, 7102, 7103)
 ✅ Scripts to start/stop/check all bots
 ✅ Separate databases for each strategy
 ✅ Wallet division across all bots

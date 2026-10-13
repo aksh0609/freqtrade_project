@@ -8,13 +8,13 @@ This project is a highly customized **Freqtrade** setup running 6 simultaneous s
 
 ### Active Strategies & Ports
 
-1. **Bollinger Bands**: Port 8080
-2. **RSI-MACD**: Port 8081
-3. **Manual Scalper**: Port 8082
-4. **NFI X7**: Port 8083
-5. **E0V1E_v17**: Port 8084
-6. **Dip Catcher**: Port 8085
-7. **Commander Web UI**: Port 8000
+1. **Bollinger Bands**: Port 7101
+2. **RSI-MACD**: Port 7102
+3. **Manual Scalper**: Port 7103
+4. **NFI X7**: Port 7104
+5. **E0V1E_v17**: Port 7105
+6. **Dip Catcher**: Port 7106
+7. **Commander Web UI**: Port 7100
 
 ---
 
@@ -100,7 +100,7 @@ This is the most stable method for moving to a different OS.
 
 ```bash
 ./start_commander.sh
-# Then open http://127.0.0.1:8000 in your browser
+# Then open http://127.0.0.1:7100 in your browser
 ```
 
 ---

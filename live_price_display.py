@@ -15,14 +15,14 @@ from requests.auth import HTTPBasicAuth
 
 # Configuration
 BOTS = [
-    {"name": "Bollinger Bands", "port": 8080, "color": "\033[94m"},  # Blue
-    {"name": "RSI-MACD", "port": 8081, "color": "\033[92m"},  # Green
-    {"name": "Manual Control", "port": 8082, "color": "\033[93m"},  # Yellow
-    {"name": "NFI X7", "port": 8083, "color": "\033[95m"},  # Magenta
-    {"name": "E0V1E_v17", "port": 8084, "color": "\033[96m"},  # Cyan
-    {"name": "Dip Catcher", "port": 8085, "color": "\033[91m"},  # Red
-    {"name": "MH Pattern", "port": 8086, "color": "\033[97m"},  # White
-    {"name": "Fear Trader", "port": 8087, "color": "\033[94m"},  # Blue
+    {"name": "Bollinger Bands", "port": 7101, "color": "\033[94m"},  # Blue
+    {"name": "RSI-MACD", "port": 7102, "color": "\033[92m"},  # Green
+    {"name": "Manual Control", "port": 7103, "color": "\033[93m"},  # Yellow
+    {"name": "NFI X7", "port": 7104, "color": "\033[95m"},  # Magenta
+    {"name": "E0V1E_v17", "port": 7105, "color": "\033[96m"},  # Cyan
+    {"name": "Dip Catcher", "port": 7106, "color": "\033[91m"},  # Red
+    {"name": "MH Pattern", "port": 7107, "color": "\033[97m"},  # White
+    {"name": "Fear Trader", "port": 7108, "color": "\033[94m"},  # Blue
 ]
 PAIRS_FUT = ["BTC/USDT:USDT", "ETH/USDT:USDT"]
 PAIRS_SPOT = ["BTCUSDT", "ETHUSDT"]

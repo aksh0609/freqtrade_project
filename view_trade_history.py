@@ -13,14 +13,14 @@ from requests.auth import HTTPBasicAuth
 
 # Configuration
 BOTS = [
-    {"name": "Bollinger Bands", "port": 8080, "emoji": "📊"},
-    {"name": "RSI-MACD", "port": 8081, "emoji": "📈"},
-    {"name": "Manual Control", "port": 8082, "emoji": "🎯"},
-    {"name": "NFI X7", "port": 8083, "emoji": "♾️"},
-    {"name": "E0V1E_v17", "port": 8084, "emoji": "🤖"},
-    {"name": "Dip Catcher", "port": 8085, "emoji": "📉"},
-    {"name": "MH Pattern", "port": 8086, "emoji": "🧠"},
-    {"name": "Fear Trader", "port": 8087, "emoji": "😨"},
+    {"name": "Bollinger Bands", "port": 7101, "emoji": "📊"},
+    {"name": "RSI-MACD", "port": 7102, "emoji": "📈"},
+    {"name": "Manual Control", "port": 7103, "emoji": "🎯"},
+    {"name": "NFI X7", "port": 7104, "emoji": "♾️"},
+    {"name": "E0V1E_v17", "port": 7105, "emoji": "🤖"},
+    {"name": "Dip Catcher", "port": 7106, "emoji": "📉"},
+    {"name": "MH Pattern", "port": 7107, "emoji": "🧠"},
+    {"name": "Fear Trader", "port": 7108, "emoji": "😨"},
 ]
 USERNAME = os.environ.get("FREQTRADE_USER", "freqtrader")
 PASSWORD = os.environ.get("FREQTRADE_PASS", "freqtrade123")

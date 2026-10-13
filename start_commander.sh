@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Freqtrade Commander Web Dashboard Server
-# This script serves the web dashboard on port 8000
+# Serves the web dashboard (default port 7100, outside the ports scalper uses)
 
-PORT=8000
+PORT=${PORT:-7100}
 DASHBOARD_DIR="$(cd "$(dirname "$0")" && pwd)/web_dashboard"
 
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
@@ -17,19 +17,17 @@ if [ ! -d "$DASHBOARD_DIR" ]; then
     exit 1
 fi
 
-# Check if port 8000 is already in use
-if lsof -Pi :$PORT -sTCP:LISTEN -t >/dev/null ; then
-    echo "⚠️  Port $PORT is already in use."
-    echo "Attempting to stop existing process on port $PORT..."
-    lsof -ti :$PORT | xargs kill -9
-    sleep 1
+# Refuse rather than kill whatever owns the port (it may be another project's server)
+if nc -z 127.0.0.1 $PORT 2>/dev/null; then
+    echo "❌ Port $PORT is already in use. Stop that process or run: PORT=<free port> $0"
+    exit 1
 fi
 
-echo "🌐 Serving Freqtrade Commander at: http://127.0.0.1:$PORT"
+echo "🌐 Serving Freqtrade Commander at: http://$(hostname):$PORT"
 echo "📝 Access this URL in your web browser to manage your bots."
 echo ""
 echo "Press Ctrl+C to stop the server"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
 # Use virtualenv uvicorn to serve the new backend app from root
-./.venv/bin/uvicorn commander_server:app --host 127.0.0.1 --port $PORT
+./.venv/bin/uvicorn commander_server:app --host 0.0.0.0 --port $PORT

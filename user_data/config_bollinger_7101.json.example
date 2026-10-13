@@ -21,7 +21,7 @@
         "unit": "minutes"
     },
     "entry_pricing": {
-        "price_side": "other",
+        "price_side": "same",
         "use_order_book": true,
         "order_book_top": 1,
         "price_last_balance": 0.0,
@@ -31,7 +31,7 @@
         }
     },
     "exit_pricing": {
-        "price_side": "other",
+        "price_side": "same",
         "use_order_book": true,
         "order_book_top": 1
     },
@@ -66,7 +66,7 @@
     "api_server": {
         "enabled": true,
         "listen_ip_address": "0.0.0.0",
-        "listen_port": 8086,
+        "listen_port": 7101,
         "verbosity": "info",
         "enable_openapi": true,
         "enable_web_ui": true,
@@ -78,11 +78,11 @@
         "username": "freqtrader",
         "password": "YOUR_BOT_PASSWORD"
     },
-    "bot_name": "MichaelHarris_Bot_8086",
+    "bot_name": "Bollinger_Bot_8080",
     "initial_state": "running",
     "force_entry_enable": true,
     "internals": {
-        "process_throttle_secs": 10
+        "process_throttle_secs": 5
     },
-    "db_url": "sqlite:///tradesv3.mh.sqlite?pool_size=10&max_overflow=20"
+    "db_url": "sqlite:///tradesv3.bollinger.dryrun.sqlite?pool_size=10&max_overflow=20"
 }

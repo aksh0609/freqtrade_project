@@ -1,13 +1,13 @@
 const CONFIG = {
     bots: [
-        { id: 8080, name: "Bot 1", url: "http://127.0.0.1:8080/api/v1" },
-        { id: 8081, name: "Bot 2", url: "http://127.0.0.1:8081/api/v1" },
-        { id: 8082, name: "Bot 3", url: "http://127.0.0.1:8082/api/v1" },
-        { id: 8083, name: "Bot 4", url: "http://127.0.0.1:8083/api/v1" },
-        { id: 8084, name: "Bot 5", url: "http://127.0.0.1:8084/api/v1" },
-        { id: 8085, name: "Bot 6 (Dip)", url: "http://127.0.0.1:8085/api/v1" },
-        { id: 8086, name: "Bot 7 (MH)", url: "http://127.0.0.1:8086/api/v1" },
-        { id: 8087, name: "Bot 8 (Fear)", url: "http://127.0.0.1:8087/api/v1" }
+        { id: 7101, name: "Bot 1", url: `http://${location.hostname}:7101/api/v1` },
+        { id: 7102, name: "Bot 2", url: `http://${location.hostname}:7102/api/v1` },
+        { id: 7103, name: "Bot 3", url: `http://${location.hostname}:7103/api/v1` },
+        { id: 7104, name: "Bot 4", url: `http://${location.hostname}:7104/api/v1` },
+        { id: 7105, name: "Bot 5", url: `http://${location.hostname}:7105/api/v1` },
+        { id: 7106, name: "Bot 6 (Dip)", url: `http://${location.hostname}:7106/api/v1` },
+        { id: 7107, name: "Bot 7 (MH)", url: `http://${location.hostname}:7107/api/v1` },
+        { id: 7108, name: "Bot 8 (Fear)", url: `http://${location.hostname}:7108/api/v1` }
     ],
     auth: {
         username: "freqtrader",
@@ -16,8 +16,8 @@ const CONFIG = {
 };
 
 const state = {
-    tokens: {}, // { 8080: "token_abc", ... }
-    balances: {}, // { 8080: 123.45, ... }
+    tokens: {}, // { 7101: "token_abc", ... }
+    balances: {}, // { 7101: 123.45, ... }
     isRefreshing: false
 };
 
@@ -300,6 +300,8 @@ function showToast(msg, type = "info") {
 
 // --- Init ---
 document.addEventListener('DOMContentLoaded', () => {
+    // Bot UI links point at whatever host served this page (localhost on the Mac, dev-<name> remotely)
+    document.querySelectorAll('a.bot-link').forEach(a => { a.hostname = location.hostname; });
     refreshAll();
     setInterval(refreshAll, 5000);
 });

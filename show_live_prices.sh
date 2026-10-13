@@ -42,14 +42,14 @@ while true; do
 
     echo "🤖 Bot Status:"
     # Check if bots are running using more robust ps grep
-    if ps aux | grep -v grep | grep "config_bollinger_8080" > /dev/null; then echo "  Bot 1 (Bollinger): [Running] - http://127.0.0.1:8080"; else echo "  Bot 1 (Bollinger): [\033[91mStopped\033[0m] - http://127.0.0.1:8080"; fi
-    if ps aux | grep -v grep | grep "config_rsi_macd_8081" > /dev/null; then echo "  Bot 2 (RSI-MACD):  [Running] - http://127.0.0.1:8081"; else echo "  Bot 2 (RSI-MACD):  [\033[91mStopped\033[0m] - http://127.0.0.1:8081"; fi
-    if ps aux | grep -v grep | grep "config_scalper_8082" > /dev/null; then echo "  Bot 3 (Manual):    [Running] - http://127.0.0.1:8082"; else echo "  Bot 3 (Manual):    [\033[91mStopped\033[0m] - http://127.0.0.1:8082"; fi
-    if ps aux | grep -v grep | grep "config_nfi_8083" > /dev/null; then echo "  Bot 4 (NFI X7):    [Running] - http://127.0.0.1:8083"; else echo "  Bot 4 (NFI X7):    [\033[91mStopped\033[0m] - http://127.0.0.1:8083"; fi
-    if ps aux | grep -v grep | grep "config_e0v1e_8084" > /dev/null; then echo "  Bot 5 (E0V1E):     [Running] - http://127.0.0.1:8084"; else echo "  Bot 5 (E0V1E):     [\033[91mStopped\033[0m] - http://127.0.0.1:8084"; fi
-    if ps aux | grep -v grep | grep "config_dip_catcher_8085" > /dev/null; then echo "  Bot 6 (Dip Catch): [Running] - http://127.0.0.1:8085"; else echo "  Bot 6 (Dip Catch): [\033[91mStopped\033[0m] - http://127.0.0.1:8085"; fi
-    if ps aux | grep -v grep | grep "config_mh_8086" > /dev/null; then echo "  Bot 7 (MH Patt):   [Running] - http://127.0.0.1:8086"; else echo "  Bot 7 (MH Patt):   [\033[91mStopped\033[0m] - http://127.0.0.1:8086"; fi
-    if ps aux | grep -v grep | grep "config_fear_8087" > /dev/null; then echo "  Bot 8 (Fear Trd):  [Running] - http://127.0.0.1:8087"; else echo "  Bot 8 (Fear Trd):  [\033[91mStopped\033[0m] - http://127.0.0.1:8087"; fi
+    if ps aux | grep -v grep | grep "config_bollinger_8080" > /dev/null; then echo "  Bot 1 (Bollinger): [Running] - http://127.0.0.1:7101"; else echo "  Bot 1 (Bollinger): [\033[91mStopped\033[0m] - http://127.0.0.1:7101"; fi
+    if ps aux | grep -v grep | grep "config_rsi_macd_8081" > /dev/null; then echo "  Bot 2 (RSI-MACD):  [Running] - http://127.0.0.1:7102"; else echo "  Bot 2 (RSI-MACD):  [\033[91mStopped\033[0m] - http://127.0.0.1:7102"; fi
+    if ps aux | grep -v grep | grep "config_scalper_8082" > /dev/null; then echo "  Bot 3 (Manual):    [Running] - http://127.0.0.1:7103"; else echo "  Bot 3 (Manual):    [\033[91mStopped\033[0m] - http://127.0.0.1:7103"; fi
+    if ps aux | grep -v grep | grep "config_nfi_8083" > /dev/null; then echo "  Bot 4 (NFI X7):    [Running] - http://127.0.0.1:7104"; else echo "  Bot 4 (NFI X7):    [\033[91mStopped\033[0m] - http://127.0.0.1:7104"; fi
+    if ps aux | grep -v grep | grep "config_e0v1e_8084" > /dev/null; then echo "  Bot 5 (E0V1E):     [Running] - http://127.0.0.1:7105"; else echo "  Bot 5 (E0V1E):     [\033[91mStopped\033[0m] - http://127.0.0.1:7105"; fi
+    if ps aux | grep -v grep | grep "config_dip_catcher_8085" > /dev/null; then echo "  Bot 6 (Dip Catch): [Running] - http://127.0.0.1:7106"; else echo "  Bot 6 (Dip Catch): [\033[91mStopped\033[0m] - http://127.0.0.1:7106"; fi
+    if ps aux | grep -v grep | grep "config_mh_8086" > /dev/null; then echo "  Bot 7 (MH Patt):   [Running] - http://127.0.0.1:7107"; else echo "  Bot 7 (MH Patt):   [\033[91mStopped\033[0m] - http://127.0.0.1:7107"; fi
+    if ps aux | grep -v grep | grep "config_fear_8087" > /dev/null; then echo "  Bot 8 (Fear Trd):  [Running] - http://127.0.0.1:7108"; else echo "  Bot 8 (Fear Trd):  [\033[91mStopped\033[0m] - http://127.0.0.1:7108"; fi
 
     echo ""
     echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"

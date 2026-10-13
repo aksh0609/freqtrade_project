@@ -119,7 +119,7 @@ freqtrade trade -c user_data/config_bybit_spot.json --strategy BollingerBands_St
 
 After switching strategies:
 
-1. **Refresh Web UI** (http://127.0.0.1:8080)
+1. **Refresh Web UI** (http://127.0.0.1:7101)
 2. **Check Dashboard** to see active strategy name
 3. **View Logs** to confirm strategy loaded:
    ```bash
@@ -198,7 +198,7 @@ pkill -9 -f "freqtrade trade"
 ./check_status.sh
 
 # Verify API is responding
-curl http://127.0.0.1:8080/api/v1/ping
+curl http://127.0.0.1:7101/api/v1/ping
 ```
 
 ### Strategy Not Switching:
@@ -220,7 +220,7 @@ sleep 3
 
 ## 📞 Support
 
-- **Web UI:** http://127.0.0.1:8080
+- **Web UI:** http://127.0.0.1:7101
 - **Freqtrade Docs:** https://www.freqtrade.io/en/stable/
 - **Strategy Files:** `user_data/strategies/`
 - **Config File:** `user_data/config_bybit_spot.json`

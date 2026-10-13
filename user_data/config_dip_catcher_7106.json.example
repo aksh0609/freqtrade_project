@@ -57,7 +57,7 @@
     "api_server": {
         "enabled": true,
         "listen_ip_address": "0.0.0.0",
-        "listen_port": 8085,
+        "listen_port": 7106,
         "verbosity": "info",
         "enable_openapi": true,
         "enable_web_ui": true,

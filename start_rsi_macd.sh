@@ -10,7 +10,7 @@ cd "$(dirname "$0")"
 freqtrade trade -c user_data/config_bybit_spot.json --strategy RSI_MACD_Strategy &
 
 echo "✅ RSI-MACD Strategy is now running!"
-echo "📊 Access Web UI at: http://127.0.0.1:8080"
+echo "📊 Access Web UI at: http://127.0.0.1:7101"
 echo ""
 echo "Strategy Details:"
 echo "  - Entry: RSI < 30 + MACD bullish crossover"

@@ -6,9 +6,9 @@ import requests
 
 # --- Configuration ---
 BOTS = [
-    {"name": "Bollinger Bands", "port": 8080, "color": "\033[94m"},  # Blue
-    {"name": "RSI-MACD", "port": 8081, "color": "\033[92m"},  # Green
-    {"name": "Manual Scalper", "port": 8082, "color": "\033[93m"},  # Yellow
+    {"name": "Bollinger Bands", "port": 7101, "color": "\033[94m"},  # Blue
+    {"name": "RSI-MACD", "port": 7102, "color": "\033[92m"},  # Green
+    {"name": "Manual Scalper", "port": 7103, "color": "\033[93m"},  # Yellow
 ]
 USERNAME = os.environ.get("FREQTRADE_USER", "freqtrader")
 PASSWORD = os.environ.get("FREQTRADE_PASS", "freqtrade123")

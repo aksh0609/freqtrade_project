@@ -5,6 +5,7 @@
 *.sqlite-wal
 logfile.txt
 user_data/*
+!user_data/strategies/
 !user_data/strategies/*.py
 !user_data/config_*.json.example
 !web_dashboard/

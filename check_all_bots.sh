@@ -30,22 +30,22 @@ else
     done
 
     echo "🌐 Web UI Access:"
-    echo "   Port 8080: http://127.0.0.1:8080  (Bollinger Bands)"
-    echo "   Port 8081: http://127.0.0.1:8081  (RSI-MACD)"
-    echo "   Port 8082: http://127.0.0.1:8082  (Manual Control)"
-    echo "   Port 8083: http://127.0.0.1:8083  (NFI X7)"
-    echo "   Port 8084: http://127.0.0.1:8084  (E0V1E_v17)"
+    echo "   Port 7101: http://127.0.0.1:7101  (Bollinger Bands)"
+    echo "   Port 7102: http://127.0.0.1:7102  (RSI-MACD)"
+    echo "   Port 7103: http://127.0.0.1:7103  (Manual Control)"
+    echo "   Port 7104: http://127.0.0.1:7104  (NFI X7)"
+    echo "   Port 7105: http://127.0.0.1:7105  (E0V1E_v17)"
     echo ""
     echo "👤 Login: freqtrader / freqtrade123"
     echo ""
 
     # Check API status
     echo "🔌 API Status:"
-    curl -s http://127.0.0.1:8080/api/v1/ping > /dev/null 2>&1 && echo "   ✅ Port 8080: Online" || echo "   ❌ Port 8080: Offline"
-    curl -s http://127.0.0.1:8081/api/v1/ping > /dev/null 2>&1 && echo "   ✅ Port 8081: Online" || echo "   ❌ Port 8081: Offline"
-    curl -s http://127.0.0.1:8082/api/v1/ping > /dev/null 2>&1 && echo "   ✅ Port 8082: Online" || echo "   ❌ Port 8082: Offline"
-    curl -s http://127.0.0.1:8083/api/v1/ping > /dev/null 2>&1 && echo "   ✅ Port 8083: Online" || echo "   ❌ Port 8083: Offline"
-    curl -s http://127.0.0.1:8084/api/v1/ping > /dev/null 2>&1 && echo "   ✅ Port 8084: Online" || echo "   ❌ Port 8084: Offline"
+    curl -s http://127.0.0.1:7101/api/v1/ping > /dev/null 2>&1 && echo "   ✅ Port 7101: Online" || echo "   ❌ Port 7101: Offline"
+    curl -s http://127.0.0.1:7102/api/v1/ping > /dev/null 2>&1 && echo "   ✅ Port 7102: Online" || echo "   ❌ Port 7102: Offline"
+    curl -s http://127.0.0.1:7103/api/v1/ping > /dev/null 2>&1 && echo "   ✅ Port 7103: Online" || echo "   ❌ Port 7103: Offline"
+    curl -s http://127.0.0.1:7104/api/v1/ping > /dev/null 2>&1 && echo "   ✅ Port 7104: Online" || echo "   ❌ Port 7104: Offline"
+    curl -s http://127.0.0.1:7105/api/v1/ping > /dev/null 2>&1 && echo "   ✅ Port 7105: Online" || echo "   ❌ Port 7105: Offline"
 fi
 
 echo ""
